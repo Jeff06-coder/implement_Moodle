@@ -1,0 +1,165 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Escrever testes de exploração da condição de bug": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081058
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478093390
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478542808
+      }
+    ],
+    "2. Escrever testes de preservação de propriedade (ANTES de implementar a correção)": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081410
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478559043
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478563630
+      }
+    ],
+    "3.1 Corrigir Bug 1 — adicionar `pgsql` ao `docker/Dockerfile`": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081537
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478574968
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479335188
+      }
+    ],
+    "3.2 Corrigir Bug 2 — alterar `env_file` para `.env` no `docker/docker-compose.yml`": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081746
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478575491
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479335605
+      }
+    ],
+    "3.3 Corrigir Bug 3 — remover linha `.kiro/` do `.gitignore`": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081831
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478575412
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479336038
+      }
+    ],
+    "3.4 Corrigir Bug 4 — adicionar etapa `cp` ao `.github/workflows/docker-lint.yml`": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478081919
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478575838
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479336285
+      }
+    ],
+    "3.5 Verificar se os testes de exploração da condição de bug agora passam": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478082032
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479345426
+      },
+      {
+        "executionId": "730e6834-5eb9-4f97-8518-e1036ed5b7d5",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479479818
+      }
+    ],
+    "3.6 Verificar se os testes de preservação ainda passam": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478082112
+      },
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479345845
+      },
+      {
+        "executionId": "730e6834-5eb9-4f97-8518-e1036ed5b7d5",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479480506
+      }
+    ],
+    "4. Checkpoint — Verificações de execução real e suíte completa de testes": [
+      {
+        "executionId": "d6a99877-5109-4cf5-985b-be6aad614775",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795478082192
+      },
+      {
+        "executionId": "730e6834-5eb9-4f97-8518-e1036ed5b7d5",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479483847
+      },
+      {
+        "executionId": "730e6834-5eb9-4f97-8518-e1036ed5b7d5",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479841421
+      }
+    ],
+    "3. Corrigir os quatro bugs": [
+      {
+        "executionId": "730e6834-5eb9-4f97-8518-e1036ed5b7d5",
+        "chatSessionId": "sess_ee8bbaa1-1007-43c2-b22b-ce0c62178a7b",
+        "timestamp": 1795479480598
+      }
+    ]
+  }
+}

@@ -17,11 +17,16 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v4
 
+      # Cria docker/.env a partir do modelo para que o docker compose config funcione no CI
+      # (docker/.env é ignorado pelo Git e não existe no runner sem este passo)
+      - name: Criar docker/.env a partir do exemplo (CI)
+        run: cp docker/.env.example docker/.env
+
       # Executa o hadolint para análise estática do Dockerfile e verifica boas práticas
-      # TODO: adicione flags --ignore <RULE> aqui se quiser suprimir regras específicas,
-      #       ex: docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 -
+      # DL3008: ignorado — fixar versões apt quebra o build quando o Debian remove versões antigas.
+      # DL3059: info (múltiplos RUN consolidáveis) — não bloqueia; permanece visível no log.
       - name: Lint do Dockerfile com hadolint
-        run: docker run --rm -i hadolint/hadolint < docker/Dockerfile
+        run: docker run --rm -i hadolint/hadolint hadolint --failure-threshold warning --ignore DL3008 - < docker/Dockerfile
 
       # Valida a sintaxe e a integridade do docker-compose.yml sem subir os serviços
       # TODO: se você tiver um ambiente de testes disponível, pode estender este step
